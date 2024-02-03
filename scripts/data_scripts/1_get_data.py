@@ -1,13 +1,13 @@
-#!/home/user-ml-srv/venv_mlops_ml_srv/bin/python
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 import sys
 
-# Генерация случайного датасета
+# генерируем случайный датасет
 def generate_random_dataset():
     np.random.seed(42)
-    n_samples = 200  # Количество наблюдений
+    n_samples = 200  
     data = {
         'Feature1': np.random.rand(n_samples),
         'Feature2': np.random.choice(['A', 'B', 'C'], size=n_samples),
